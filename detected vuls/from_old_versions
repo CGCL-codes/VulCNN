@@ -1,4 +1,5 @@
-### 47 Vulnerabilities discovered by VulCNN from old versions of our selected products
+47 Vulnerabilities discovered by VulCNN from old versions of our selected products
+
 | Target product | CVE ID         | Vulnerable product reported | Vulnerability release date | Vulnerable file in the target product   | Patched or not in the newest version? |
 |----------------|----------------|-----------------------------|----------------------------|-----------------------------------------|---------------------------------------|
 | Libav 0.8.21   | CVE-2011-3893  | FFmpeg                      | 11/11/2011                 | libavcodec/vorbis.c                     | Not patched                           |
