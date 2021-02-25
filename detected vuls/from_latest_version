@@ -1,0 +1,33 @@
+ 26 Vulnerabilities discovered by VulCNN from the latest versions of our selected products
+ 
+| Target product   | CVE ID           | Vulnerable product reported     | Vulnerability release date | Vulnerable file in the target product |
+|------------------|------------------|---------------------------------|----------------------------|---------------------------------------|
+| Libav 12.3       | CVE-2011-3893    | FFmpeg                          | 11/11/2011                 | libavcodec/vorbis.c                   |
+|                  | CVE-2013-0845    | FFmpeg                          | 12/07/2013                 | libavcodec/alsdec.c                   |
+|                  | CVE-2013-0856    | FFmpeg                          | 12/07/2013                 | libavcodec/alac.c                     |
+|                  | CVE-2015-6820    | FFmpeg                          | 09/05/2015                 | libavcodec/aacsbr.c                   |
+|                  | CVE-2015-6822    | FFmpeg                          | 09/05/2015                 | libavcodec/sanm.c                     |
+|                  | CVE-2015-8662    | FFmpeg                          | 12/23/2015                 | libavcodec/jpeg2000dwt.c              |
+|                  | CVE-2018-1999010 | FFmpeg                          | 07/23/2018                 | libavformat/mms.c                     |
+|                  | CVE-2018-1999011 | FFmpeg                          | 07/23/2018                 | libavformat/asfdec.c                  |
+|------------------|------------------|---------------------------------|----------------------------|---------------------------------------|
+| SeaMonkey 2.53.4 | CVE-2007-5947    | Firefox                         | 11/13/2007                 | .../base/nsDocShell.cpp               |
+|                  | CVE-2008-2805    | Firefox, SeaMonkey              | 07/07/2008                 | .../generic/HyperTextAccessible.cpp   |
+|                  | CVE-2008-2805    | Firefox, SeaMonkey              | 07/07/2008                 | .../generic/Accessible.cpp            |
+|                  | CVE-2009-2663    | Firefox                         | 08/04/2009                 | .../lib/vorbis_analysis.c             |
+|                  | CVE-2009-3071    | Firefox                         | 09/10/2009                 | .../cxx/TestCrashCleanup.cpp          |
+|                  | CVE-2009-3071    | Firefox                         | 09/10/2009                 | .../cxx/TestInterruptErrorCleanup.cpp |
+|                  | CVE-2010-0174    | Firefox, Thunderbird, SeaMonkey | 04/05/2010                 | .../pingsender/pingsender_win.cpp     |
+|                  | CVE-2014-9672    | FreeType                        | 02/08/2015                 | .../mac/ftmac.c                       |
+|                  | CVE-2014-9675    | FreeType                        | 02/08/2015                 | .../lzw/ftlzw.c                       |
+|                  | CVE-2014-9675    | FreeType                        | 02/08/2015                 | .../bzip2/ftbzip2.c                   |
+|                  | CVE-2016-3189    | Bzip2                           | 06/30/2016                 | .../src/decompress.c                  |
+|                  | CVE-2016-3189    | Bzip2                           | 06/30/2016                 | .../bzip2-1.0.6/bzip2recover.c        |
+|                  | CVE-2016-3189    | Bzip2                           | 06/30/2016                 | .../bzip2-1.0.6/decompress.c          |
+|                  | CVE-2018-5097    | Firefox, Thunderbird            | 06/11/2018                 | .../xslt/txMozillaTextOutput.cpp      |
+|                  | CVE-2018-5181    | Firefox                         | 06/11/2018                 | .../widget/nsDragServiceProxy.cpp     |
+|------------------|------------------|---------------------------------|----------------------------|---------------------------------------|
+| Xen 4.14.0       | CVE-2011-3346    | QEMU                            | 04/01/2014                 | .../scsi/scsi-disk.c                  |
+|                  | CVE-2013-4532    | QEMU                            | 01/02/2020                 | .../hw/stellaris_enet.c               |
+|                  | CVE-2016-2841    | QEMU                            | 06/16/2016                 | .../hw/ne2000.c                       |
+|------------------|------------------|---------------------------------|----------------------------|---------------------------------------|
