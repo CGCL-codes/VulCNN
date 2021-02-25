@@ -1,50 +1,18 @@
-### 47 Vulnerabilities discovered by VulCNN from old versions of our selected products
-| Target product | CVE ID         | Vulnerable product reported | Vulnerability release date | Vulnerable file in the target product   | Patched or not in the newest version? |
-|----------------|----------------|-----------------------------|----------------------------|-----------------------------------------|---------------------------------------|
-| Libav 0.8.21   | CVE-2011-3893  | FFmpeg                      | 11/11/2011                 | libavcodec/vorbis.c                     | Not patched                           |
-|                | CVE-2011-3941  | FFmpeg                      | 12/09/2012                 | libavcodec/error_resilience.c           | Patched                               |
-|                | CVE-2013-0845  | FFmpeg                      | 12/07/2013                 | libavcodec/alsdec.c                     | Not patched                           |
-|                | CVE-2013-7010  | FFmpeg                      | 12/09/2013                 | libavcodec/dsputil.c                    | Not exist                             |
-|                | CVE-2013-7023  | FFmpeg                      | 12/09/2013                 | libavcodec/parser.c                     | Patched                               |
-|                | CVE-2015-3395  | Libav, FFmpeg               | 06/16/2015                 | libavcodec/msrledec.c                   | Patched                               |
-|  Libav 9.21    | CVE-2011-3893  | FFmpeg                      | 11/11/2011                 | libavcodec/vorbis.c                     | Not patched                           |
-|                | CVE-2013-0845  | FFmpeg                      | 12/07/2013                 | libavcodec/alsdec.c                     | Not patched                           |
-|                | CVE-2013-0856  | FFmpeg                      | 12/07/2013                 | libavcodec/alac.c                       | Not patched                           |
-|                | CVE-2013-7023  | FFmpeg                      | 12/09/2013                 | libavcodec/parser.c                     | Patched                               |
-|                | CVE-2015-3395  | Libav, FFmpeg               | 06/16/2015                 | libavcodec/msrledec.c                   | Patched                               |
-|                | CVE-2015-6820  | FFmpeg                      | 09/05/2015                 | libavcodec/aacsbr.c                     | Not patched                           |
-|                | CVE-2017-9992  | FFmpeg                      | 06/28/2017                 | libavcodec/dfa.c                        | Patched                               |
-| Libav 11.12    | CVE-2011-3893  | FFmpeg                      | 11/11/2011                 | libavcodec/vorbis.c                     | Not patched                           |
-|                | CVE-2013-0845  | FFmpeg                      | 12/07/2013                 | libavcodec/alsdec.c                     | Not patched                           |
-|                | CVE-2013-0856  | FFmpeg                      | 12/07/2013                 | libavcodec/alac.c                       | Not patched                           |
-|                | CVE-2013-7013  | FFmpeg                      | 12/09/2013                 | libavcodec/g2meet.c                     | Patched                               |
-|                | CVE-2015-3417  | FFmpeg                      | 04/24/2015                 | libavcodec/h264.c                       | Not exist                             |
-|                | CVE-2015-6820  | FFmpeg                      | 09/05/2015                 | libavcodec/aacsbr.c                     | Not patched                           |
-|                | CVE-2015-6826  | FFmpeg                      | 09/05/2015                 | libavcodec/rv34.c                       | Patched                               |
-|                | CVE-2017-11665 | FFmpeg                      | 07/27/2017                 | libavformat/rtmppkt.c                   | Patched                               |
-|                | CVE-2017-14057 | FFmpeg                      | 08/31/2017                 | libavformat/asfdec.c                    | Patched                               |
-| SeaMonkey 2.32 | CVE-2015-0836  | Firefox, Thunderbird        | 02/25/2015                 | .../decoders/nsPNGDecoder.cpp           | Patched                               |
-|                | CVE-2015-2738  | Firefox, Thunderbird        | 07/05/2015                 | .../gl/GLReadTexImageHelper.cpp         | Patched                               |
-|                | CVE-2015-4520  | Firefox                     | 09/24/2015                 | .../src/nsCrossSiteListenerProxy.cpp    | Not exist                             |
-|                | CVE-2015-7178  | Firefox                     | 09/24/2015                 | .../src/libGLESv2/ProgramBinary.cpp     | Not exist                             |
-|                | CVE-2015-7196  | Firefox                     | 11/05/2015                 | .../base/nsNPAPIPlugin.cpp              | Patched                               |
-|                | CVE-2015-7199  | Firefox                     | 11/05/2015                 | .../src/SVGPathSegListSMILType.cpp      | Patched                               |
-|                | CVE-2016-1953  | Firefox                     | 03/13/2016                 | .../windows/WindowsGamepad.cpp          | Patched                               |
-|                | CVE-2016-1977  | Firefox                     | 03/13/2016                 | .../src/Slot.cpp                        | Patched                               |
-|                | CVE-2017-5387  | Firefox                     | 06/11/2018                 | .../src/HTMLTrackElement.cpp            | Patched                               |
-|                | CVE-2017-5432  | Firefox, Thunderbird        | 06/11/2018                 | .../src/nsTextEditorState.cpp           | Patched                               |
-|                | CVE-2017-7801  | Firefox, Thunderbird        | 06/11/2018                 | .../xbl/nsXBLProtoImplField.cpp         | Patched                               |
-|                | CVE-2018-12364 | Firefox, Thunderbird        | 10/18/2018                 | .../base/nsPluginStreamListenerPeer.cpp | Patched                               |
-|                | CVE-2018-5097  | Firefox, Thunderbird        | 06/11/2018                 | .../xslt/txMozillaXSLTProcessor.cpp     | Patched                               |
-| Xen 4.12.0     | CVE-2011-3346  | QEMU                        | 04/01/2014                 | .../scsi/scsi-disk.c                    | Not patched                           |
-|                | CVE-2013-4532  | QEMU                        | 01/02/2020                 | .../hw/stellaris_enet.c                 | Not patched                           |
-|                | CVE-2016-2841  | QEMU                        | 06/16/2016                 | .../hw/ne2000.c                         | Not patched                           |
-|                | CVE-2018-16847 | QEMU                        | 11/02/2018                 | .../block/nvme.c                        | Patched                               |
-|                | CVE-2018-16872 | QEMU                        | 12/13/2018                 | .../usb/dev-mtp.c                       | Patched                               |
-|                | CVE-2018-17963 | QEMU                        | 10/09/2018                 | .../net/net.c                           | Patched                               |
-|                | CVE-2018-19364 | QEMU                        | 12/13/2018                 | .../9pfs/9p.c                           | Patched                               |
-|                | CVE-2019-11091 | Intel                       | 05/30/2019                 | .../libxl_cpuid.c                       | Patched                               |
-|                | CVE-2019-6778  | QEMU                        | 03/21/2019                 | .../slirp/tcp_subr.c                    | Patched                               |
-| Xen 4.13.0     | CVE-2011-3346  | QEMU                        | 04/01/2014                 | .../scsi/scsi-disk.c                    | Not patched                           |
-|                | CVE-2013-4532  | QEMU                        | 01/02/2020                 | .../hw/stellaris_enet.c                 | Not patched                           |
-|                | CVE-2016-2841  | QEMU                        | 06/16/2016                 | .../hw/ne2000.c                         | Not patched                           |
+We select three widely used open-source products as our test objects: Libav, Xen, and Seamonkey.
+The versions of these products include both several old versions and the latest version.
+By this, we can report whether vulnerabilities in old versions have been 'silently' patched in the latest version or not.
+Table presents the summary of our collected products, the total number of functions that can be successfully analyzed by Joern in these products is 600,233.
+In other words, VulCNN analyzes a total of 600,233 functions, with a total of more than 25 million lines of code.
+
+| OpenSource Software | #Files  | #Functions | #Lines of Code |
+|---------------------|---------|------------|----------------|
+| Libav-0.8.21        | 996     | 8,198      | 437,857        |
+| Libav-9.21          | 1,135   | 8,917      | 471,691        |
+| Libav-11.12         | 1,343   | 9,807      | 552,768        |
+| Libav-12.3          | 1,509   | 10,760     | 625,034        |
+| Xen-4.12.0          | 4,225   | 61,693     | 2,464,062      |
+| Xen-4.13.0          | 4,988   | 68,400     | 2,783,561      |
+| Xen-4.14.0          | 5,151   | 71,230     | 2,872,957      |
+| Seamonkey-2.32      | 11,600  | 153,122    | 6,495,189      |
+| Seamonkey-2.53.4    | 15,369  | 208,106    | 8,798,738      |
+| Total               | 46,316  | 600,233    | 25,501,857     |
