@@ -1,8 +1,7 @@
 We select three widely used open-source products as our test objects: Libav, Xen, and Seamonkey.
 The versions of these products include both several old versions and the latest version.
 By this, we can report whether vulnerabilities in old versions have been 'silently' patched in the latest version or not.
-Table presents the summary of our collected products, the total number of functions that can be successfully analyzed by Joern in these products is 600,233.
-In other words, VulCNN analyzes a total of 600,233 functions, with a total of more than 25 million lines of code.
+Table presents the summary of our collected products, the total number of functions that can be successfully analyzed by Joern in these products is 600,233. In other words, VulCNN analyzes a total of 600,233 functions, with a total of more than 25 million lines of code.
 
 | OpenSource Software | #Files  | #Functions | #Lines of Code |
 |---------------------|---------|------------|----------------|
