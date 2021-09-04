@@ -1,4 +1,4 @@
-47 Vulnerabilities discovered by VulCNN from old versions of our selected products
+47 Vulnerabilities discovered by VulCNN from old versions of our selected products.
 
 |----------------|----------------|-----------------------------|----------------------------|-----------------------------------------|---------------------------------------|
 | Target product | CVE ID         | Vulnerable product reported | Vulnerability release date | Vulnerable file in the target product   | Patched or not in the newest version? |
