@@ -25,6 +25,7 @@ finally discover 73 vulnerabilities that are not reported in NVD.
 
 ## Design of VulCNN
 ![avatar](overview.png)
+
 VulCNN consists of four main phases:
 Graph Extraction, Sentence Embedding, Image Generation, and
 Classification.
@@ -50,14 +51,16 @@ number of production, synthetic, and academic security flaws or vulnerabilities 
 paper, we focus on detecting vulnerability in C/C++, therefore, we
 only select functions written in C/C++ in SARD. Data obtained
 from SARD consists of 12,303 vulnerable functions and 21,057
-non-vulnerable functions. Moreover, since the synthetic programs
+non-vulnerable functions. 
+
+Moreover, since the synthetic programs
 in SARD may not be realistic, we collect another dataset from
 real-world software. For real-world vulnerabilities, we consider
 National Vulnerability Database (NVD) (https://nvd.nist.gov) as our collection
 source. We finally obtain 1,384 vulnerable functions that belong to
 different open-source software written in C/C++. For real-world
 non-vulnerable functions, we randomly select a part of the dataset
-in [42] which contains non-vulnerable functions from several open-
+in *"Deep learning-based vulnerable function detection: A benchmark"* which contains non-vulnerable functions from several open-
 source projects. Our final dataset consists of 13,687 vulnerable
 functions and 26,970 non-vulnerable functions.
 
