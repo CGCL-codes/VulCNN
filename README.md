@@ -24,8 +24,8 @@ detect large-scale vulnerability. Through the scanning reports, we
 finally discover 73 vulnerabilities that are not reported in NVD.
 
 ## Design of VulCNN
-![avatar](overview.png)
-
+ <img src="overview.png" width = "800" height = "300" alt="图片名称" align=center />
+ 
 VulCNN consists of four main phases:
 Graph Extraction, Sentence Embedding, Image Generation, and
 Classification.
