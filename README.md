@@ -100,7 +100,7 @@ Integrate the data and divide the training and testing datasets with generate_tr
 # n denotes the number of kfold, i.e., n=10 then the training set and test set are divided according to 9:1 and 10 sets of experiments will be performed
 python generate_train_test_data.py -i ./data/sard/outputs -o ./data/sard/pkl -n 5
 ```
-#### Step 5: Train with CNN
+#### Step 6: Train with CNN
 ```
 python VulCNN.py -i ./data/sard/pkl
 ```
