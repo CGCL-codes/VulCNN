@@ -17,13 +17,13 @@ from sklearn.metrics import precision_recall_fscore_support
 
 
 def sava_data(filename, data):
-    print("开始保存数据至于：", filename)
+    print("Begin to save data：", filename)
     f = open(filename, 'wb')
     pickle.dump(data, f)
     f.close()
 
 def load_data(filename):
-    print("开始读取数据于：", filename)
+    print("Begin to load data：", filename)
     f = open(filename, 'rb')
     data = pickle.load(f)
     f.close()
@@ -97,8 +97,8 @@ class TraditionalDataset(Dataset):
 class TextCNN(nn.Module):
     def __init__(self, hidden_size):
         super(TextCNN, self).__init__()
-        self.filter_sizes = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)            # 卷积核尺寸
-        self.num_filters = 32                                          # 卷积核数量(channels数)
+        self.filter_sizes = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)           
+        self.num_filters = 32                                        
         classifier_dropout = 0.1
         self.convs = nn.ModuleList(
             [nn.Conv2d(3, self.num_filters, (k, hidden_size)) for k in self.filter_sizes])
@@ -172,8 +172,8 @@ class CNN_Classifier():
             preds = torch.argmax(outputs, dim=1).flatten()           
             
             losses.append(loss.item())
-            predictions += list(np.array(preds.cpu()))   # 获取预测
-            labels += list(np.array(targets.cpu()))      # 获取标签
+            predictions += list(np.array(preds.cpu()))   
+            labels += list(np.array(targets.cpu()))      
 
             torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=1.0)
 
