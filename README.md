@@ -66,12 +66,12 @@ functions and 26,970 non-vulnerable functions.
 
 ## Source Code
 
-#### Step 1: Code Normalization
+#### Step 1: Code normalization
 Normalize the code with normalization.py (This operation will overwrite the data file, please make a backup)
 ```
 python ./normalization.py -i ./data/sard
 ```
-#### Step 2: generate pdgs with the help of joern
+#### Step 2: Generate pdgs with the help of joern
 Prepare the environment refering to: [joern](https://github.com/joernio/joern)
 ```
 # first generate .bin files
@@ -88,7 +88,7 @@ Refer to [sent2vec](https://github.com/epfml/sent2vec#train-a-new-sent2vec-model
 ```
 ./fasttext sent2vec -input ./data/data.txt -output ./data/data_model -minCount 8 -dim 128 -epoch 9 -lr 0.2 -wordNgrams 2 -loss ns -neg 10 -thread 20 -t 0.000005 -dropoutK 4 -minCountLabel 20 -bucket 4000000 -maxVocabSize 750000 -numCheckPoints 10
 ```
-#### Step 4: Generate Images from the pdgs
+#### Step 4: Generate images from the pdgs
 Generate Images from the pdgs with ImageGeneration.py, this step will output a .pkl file for each .dot file.
 ```
 python ImageGeneration.py -i ./data/sard/pdgs/Vul -o ./data/sard/outputs/Vul -m ./data/data_model.bin
