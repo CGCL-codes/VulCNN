@@ -19,8 +19,8 @@ def get_all_file(path):
 
 def parse_options():
     parser = argparse.ArgumentParser(description='Extracting Cpgs.')
-    parser.add_argument('-i', '--input', help='The dir path of input', type=str, default='/home/survey_devign/survey_data_preprocess/novul_bin')
-    parser.add_argument('-o', '--output', help='The dir path of output', type=str, default='/home/survey_devign/survey_data_preprocess/novul_output_pdg')
+    parser.add_argument('-i', '--input', help='The dir path of input', type=str, default='./novul_bin')
+    parser.add_argument('-o', '--output', help='The dir path of output', type=str, default='./novul_output_pdg')
     parser.add_argument('-t', '--type', help='The type of procedures: parse or export', type=str, default='export')
     parser.add_argument('-r', '--repr', help='The type of representation: pdg or lineinfo_json', type=str, default='pdg')
     args = parser.parse_args()
@@ -63,7 +63,7 @@ def joern_export(bin, outdir, repr):
     os.environ['out'] = str(out)
     
     if repr == 'pdg':
-        os.system('sh joern-export $bin'+ " --repr " + "pdg" + ' --out $out') # cpg 改成 pdg
+        os.system('sh joern-export $bin'+ " --repr " + "pdg" + ' --out $out') 
         try:
             pdg_list = os.listdir(out)
             for pdg in pdg_list:
