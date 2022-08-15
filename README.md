@@ -88,6 +88,8 @@ Refer to [sent2vec](https://github.com/epfml/sent2vec#train-a-new-sent2vec-model
 ```
 ./fasttext sent2vec -input ./data/data.txt -output ./data/data_model -minCount 8 -dim 128 -epoch 9 -lr 0.2 -wordNgrams 2 -loss ns -neg 10 -thread 20 -t 0.000005 -dropoutK 4 -minCountLabel 20 -bucket 4000000 -maxVocabSize 750000 -numCheckPoints 10
 ```
+(For convenience, we share a simple sent2vec model [here](https://drive.google.com/file/d/1o_xP_kaZBV5ghZ1WjKzXBnQYilED2PMw/view?usp=sharing) trained by using our sard dataset. If you want to achieve better performance of VulCNN, you'd better train a new sent2vec by using larger dataset such as Linux Kernel.)
+
 #### Step 4: Generate images from the pdgs
 Generate Images from the pdgs with ImageGeneration.py, this step will output a .pkl file for each .dot file.
 ```
