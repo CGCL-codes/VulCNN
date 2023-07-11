@@ -72,7 +72,7 @@ Normalize the code with normalization.py (This operation will overwrite the data
 python ./normalization.py -i ./data/sard
 ```
 #### Step 2: Generate pdgs with the help of joern
-Prepare the environment refering to: [joern](https://github.com/joernio/joern)
+Prepare the environment refering to: [joern](https://github.com/joernio/joern, you can try the version between 1.1.99 to 1.1.1125)
 ```
 # first generate .bin files
 python joern_graph_gen.py  -i ./data/sard/Vul -o ./data/sard/bins/Vul -t parse
